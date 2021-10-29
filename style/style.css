@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.wrap {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+.header {
+    background-color: #222;
+    color: #fff;
+}
+
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.header-col-1 {
+    padding: 18px 0 19px;
+    display: flex;
+    align-items: center;
+}
+
+.header-col-2 {
+    padding: 18px 0 20px;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: transparent;
+    margin-right: 41px;
+}
+
+.search-button, .burger-button {
+    background-color: transparent;
+    border: none;
+}
+
+.profile-link, .cart-link {
+    text-decoration: none;
+    color: transparent;
+}
+
+/* .cart-link { 
+    width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  line-height: 5em;  
+  text-align: center; 
+  background: #F16D7F;
+}*/
+
+.profile-link {
+    margin: 0 33px;
+}
+
+/* Offer */
+.promo {
+    background-color: #F1E4E6;
+}
+
+.promo-wrap {
+    height: 765px;
+    background-image: url(../image/main_menu/promo.png);
+    background-repeat: no-repeat;
+    background-position-x: -225px;
+    background-position-y: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.promo-title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 40px;
+    color: #222222;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-right: 90px;
+}
+
+.promo-title--small {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+
+.promo-title--pink {
+    color: #F16D7F;
+}
+
+/* Categories*/
+
+.categories {
+    padding-top: 65px;
+    padding-bottom: 105px;
+}
+
+.categories-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.categories-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #C4C4C4;
+    width: 360px;
+    height: 260px;
+    text-align: center;
+   
+}
+
+.categories-sale {
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+.categories-name{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color:  #F16D7F
+}
+
+.categories-items--acc {
+    margin-top: 30px;
+    width: 100%;
+    height: 180px;
+    background-image: url(../image/cards/accesories.jpg);
+}
+
+.categories-items--kids {
+    background-image: url(../image/cards/kids.jpg);
+}
+
+.categories-items--men {
+    background-image: url(../image/cards/men.jpg);
+}
+
+.categories-items--women {
+    background-image: url(../image/cards/women.jpg);
+}
+
+/* Products*/
+
+.products-cards {
+padding-top: 30px;
+padding-left: 0;
+margin-bottom: 45px;
+list-style: none;
+
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 30px;
+}
+
+.fetured {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.fetured-title {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+.products-cards--list {
+    background-color: #f8f8f8;
+    width: 360px;
+}
+
+.products-cards--name {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.products-cards--content {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.products-cards--price {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.products-box {
+    padding: 18px;
+}
+
+.center {
+    text-align: center;
+    padding-bottom: 95px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 1px solid #F26376;
+    color: #F26376;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+/* Features*/ 
+
+.features {
+
+    background-color: #222;
+    padding: 103px 0;
+}
+
+.features-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    
+}
+
+.features-info {
+    width: 360px;
+    text-align: center;
+}
+
+.features-img {
+height: 40px;
+text-align: center;
+margin-bottom: 19px;
+}
+
+
+.features-wrap--name {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #fbfbfb;
+    text-align: center;
+}
+
+.features-wrap--title {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+
+/* Feedback */
+.feedback {
+    background-color: #fff;
+    background-image: url("../image/feedback/feedback-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews {
+    width: 360px;
+    text-align: center;
+}
+
+.reviews-text {
+    font-size: 20px;
+    line-height: 24px;
+    font-style: italic;
+}
+
+.feedback-subscribe {
+    width: 560px;
+    padding: 0 93px;
+    ;
+    
+}
+
+.feedback-title {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center
+}
+
+
+.feedback-title::first-line {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe-form {
+background-color: #E1E1E1;
+border: none;
+padding: 18px;
+border-radius: 23px 0 0 23px;
+}
+
+.subscribe-btn {
+border: none;
+background-color: #F16D7F;
+color: #fff;
+padding: 18px;
+border-radius: 0 23px 23px 0;
+}
+
+
+
+/* Footer */
+
+.footer {
+    background-color: #222;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    text-align: start;
+    padding: 30px 0;
+    
+}
+
+.footer-item {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    padding: 24px 0 23px;
+}
+
+.footer-link {
+    font-size: 20px;
+    background-color: #fff;
+    color: #222;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
